@@ -2,11 +2,11 @@ from flask import Flask
 from flask_restful import Api
 from flask_jwt import JWT
 
-from project.security import authenticate, identity
-from project.resources.user import UserRegister
-from project.resources.item import Item, Items
-from project.resources.store import Store, StoreList
-from project.db import db
+from security import authenticate, identity
+from resources import UserRegister
+from resources import Item, Items
+from resources.store import Store, StoreList
+from db import db
 
 
 app = Flask(__name__)
